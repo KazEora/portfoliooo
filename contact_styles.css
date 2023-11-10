@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282828;
+}
+
+nav img{
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    margin-left: 100px;
+    transition: background 0.5s;
+}
+
+nav img:hover{
+    transform: scale(1.1)
+}
+
+nav ul{
+    margin-right: 110px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* -------- contacts ---------- */
+
+#contacts{
+    padding: 40px 0;
+}
+
+.contact-list h1{
+    margin-top: 100px;
+}
+
+
+.contact-list p{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.contact-list p i{
+    color: yellow;
+    margin-right: 8px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.contact-list i{
+    font-size: 30px;
+}
+
+.contact-list h3{
+    color: white;
+}
+
+.contact-list .sub-title-contact span{
+    color: yellow;
+}
+
+.sub-title-contact{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.social-icons{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 10px;
+    margin-right: 8px;
+    color: white;
+    display: inline-block;
+}
+
+.social-icons a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+/* -------- copyright ---------- */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+    margin-top: 30px;
+    color: white;
+}

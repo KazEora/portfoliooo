@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Erwin Ferrer</title>
+        <link href="images/logo.png" rel="icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7917a437e2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#header"><img src="images/logo1.png" class="logo"></a>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1><span>Erwin</span> Ferrer</h1>
+                    <p>I'm a <span class="auto-type"></span></p>
+                    <div class="btn-header">
+                        <a href="images/CC_21_22_UR (1).xlsx" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="space">
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title-project"><span>Port</span>folio</h1>
+            </div>
+        </div> 
+        
+        <!------------Card------------->
+        <div class="card-container">
+            <div class="card">
+              <img src="images/person.png" alt="Image 1">
+              <a href="about.html" class="pindutan">ABOUT ME</a>
+            </div>
+            <div class="card">
+              <img src="images/project icon.png" alt="Image 2">
+              <a href="project.html" class="pindutan">PROJECTS</a>
+            </div>
+            <div class="card">
+                <img src="images/contact icon.png" alt="Image 2">
+                <a href="contact.html" class="pindutan">CONTACTS</a>
+            </div>
+        </div>  
+
+        <div id="space">
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed(".auto-type",{
+                strings: ["Web Developer", "Computer Programmer"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            })
+        </script>
+
+
+    </body>
+</html>

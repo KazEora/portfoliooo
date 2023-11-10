@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282828;
+}
+
+nav img{
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    margin-left: 100px;
+    transition: background 0.5s;
+}
+
+nav img:hover{
+    transform: scale(1.1)
+}
+
+nav ul{
+    margin-right: 110px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* -------- projects ---------- */
+
+#projects{
+    padding: 40px 0;
+}
+
+.sub-title-project{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-left: 6.8%;
+    margin-top: 10px;
+}
+
+.sub-title-project span{
+    color: yellow;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-top: 0px;
+    margin: 0px 1%;
+}
+
+.project-list div{
+    background: black;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    
+}
+
+.project-list div h2{
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.project-list div h3{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.project-list div p{
+    text-align: justify;
+    text-justify: auto;
+}
+
+.project-list div a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid white;
+    position: relative;
+    margin-left: 3.9%;
+}
+
+.project-list div a:hover{
+    color: yellow;
+    border: 1px solid yellow;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.project-list img{
+    width: 100%;
+    border-radius: 10px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+
+/*
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img{
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #b8b8b8);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layer{
+    height: 100%;
+}
+
+*/
+
+        /* Style for the COE dropdown container */
+        .amd-dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Style for the COE dropdown button */
+        .amd-dropdown .amd-dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white; /* Text color for the COE button */
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            transition: background-color 0.3s; /* Smooth background color transition on hover and click */
+        }
+
+        /* Style for the COE dropdown content */
+        .amd-dropdown-content {
+            display: none;
+            position: relative;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        /* Style for the COE dropdown links */
+        .amd-dropdown-content p{
+            float: none;
+            color: white; /* Text color for the dropdown links */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: justify;
+            transition: background-color 0.3s; /* Smooth background color transition on hover and click */
+        }
+
+        /* Show the COE dropdown content when hovering over the COE button */
+        .amd-dropdown:hover .amd-dropdown-content {
+            display: block;
+        }

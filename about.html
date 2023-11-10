@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link href="images/logo.png" rel="icon">
+    <link rel="stylesheet" href="about_styles.css">
+    <script src="https://kit.fontawesome.com/7917a437e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo1.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/erwin.png" class="image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-about"><span>Ab</span>out</h1>
+                <div class="aboutContainer">
+                    <p>My name is Erwin Ferrer, I'm an 
+                        enthusiastic Web Developer working in the 
+                        Engineering industry. With a strong background in Web 
+                        development, I am dedicated to build websites and ensure 
+                        they perform reliably and efficiently. 
+                        <br> <br> Throughout my journey, I have developed a diverse 
+                        skill set that includes HTML, CSS, and JavaScript for 
+                        the frontend and PHP or Node. I thrive in collaborative 
+                        environments. I am continuously seeking opportunities to 
+                        expand my knowledge and push my boundaries to achieve new 
+                        heights. 
+                        <br> <br> Beyond my professional pursuits, I find inspiration
+                        in exploring the intersection of technology and art. One of my 
+                        greatest passions is photography, and I have discovered that 
+                        it complements my skills as a web developer in unexpected ways.
+                        <br> <br> I am excited to present my portfolio, which showcases my 
+                        projects, achievements, and growth. Feel free to explore and 
+                        learn more about my work. If you have any inquiries or would 
+                        like to collaborate, please don't hesitate to contact me Thank 
+                        you for visiting, and I look forward to connecting with you!"
+                    </p>
+                </div>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <!--Skills-->
+                <div id="skills" class="tab-contents active-tab">
+                    <div class="skills-name">
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Davinci Resolve</li>
+                            <li>Vs Code</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <!--Experience-->
+                <div id="experience" class="tab-contents">
+                    <h2>Converge ICT Solutions Inc. | August 2021 - August 2022</h2>
+                    <h4>Assistant</h4>
+                    <ul>
+                        <li>Monitoring the linemans/Installers and materials.</li>
+                        <li>Handled some clients concerns.</li>
+                    </ul>
+                </div>
+
+                <!--Education-->
+                <div id="education" class="tab-contents">
+                    <h2>BS Computer Engineering | 2020 - 20??</h2>
+                    <h4>Pangasinan State University</h4>
+                    <ul>
+                        <li><span>Honors: </span>Give chance to others ^_^</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------END OF ABOUT------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    
+</body>
+</html>

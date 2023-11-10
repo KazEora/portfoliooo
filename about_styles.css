@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282828;
+}
+
+nav img{
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    margin-left: 100px;
+    transition: background 0.5s;
+}
+
+nav img:hover{
+    transform: scale(1.1)
+}
+
+nav ul{
+    margin-right: 110px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* -------- about ---------- */
+
+#about{
+    padding: 80px 0;
+    color: white;
+    /* background-image: url("img/AboutBG.png"); */
+}
+
+img{
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutContainer{
+    margin-right: 40px;
+}
+
+.aboutContainer p{
+    text-align: justify;
+    text-justify: auto;
+    font-size: 20px;
+    color: white;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-top: none;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid yellow;
+}
+
+.about-col-2{
+    flex-basis: 50%;
+    margin-top: none;
+}
+
+.about-col-2 p{
+    margin-top: 10px;
+}
+
+.about-col-2 p span{
+    color: white;
+    font-weight: 800;
+}
+
+.sub-title-about{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-top: none;
+}
+
+.sub-title-about span{
+    color: yellow;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 80%;
+}
+
+.tab-contents i{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.tab-contents img{
+    width: 80px;
+    margin-left: 2px;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tab-contents .skills-name p{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents h2 span{
+    margin-left: 300px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.tab-contents h4{
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.tab-contents ul{
+    margin-bottom: 50px;
+}
+
+.tab-contents ul li{
+    margin-left: 15px;
+}
+
+.tab-contents ul li span{
+    font-weight: 1000;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
